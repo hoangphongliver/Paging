@@ -1,0 +1,75 @@
+<html>
+<header>
+    <link rel="stylesheet" href="paging.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</header>
+
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="container">
+            <div class="content__search">
+                <input type="text" placeholder="Nhập vào đây">
+                <button id="search">Search</button>
+                <button id="add">Add Book</button>
+            </div>
+            <div class="add-book">
+                <div class="book-info">
+                    <p>Enter Name</p>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="book-info">
+                    <p>Enter Link Image</p>
+                    <input type="text" id="imgLink" placeholder="Link Image">
+                </div>
+                <div>
+                    <button id="add-book">Add</button>
+                </div>
+            </div>
+            <div class="content__product" id="product">
+                <!-- <div class="content__product__item">
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                    <h3></h3>
+                </div> -->
+            </div>
+            <div class="no-result">Không có kết quả tìm kiếm</div>
+            <div class="content__paging">
+                <div class="page">
+                    <ul>
+                        <li class="btn-prev btn-active fas fa-angle-left"></li>
+                        <div class="number-page" id="number-page">
+                            <!-- <li class="active">
+                            <a>1</a>
+                        </li>
+                        <li>
+                            <a>2</a>
+                        </li>
+                        <li>
+                            <a>3</a>
+                        </li> -->
+                        </div>
+                        <li class="btn-next fas fa-angle-right"></li>
+                    </ul>
+                </div>
+                <div class="page-config">
+                    <label for="">Item per page: </label>
+                    <select name="" id="mySelect">
+                        <option value="3">3</option>
+                        <option value="6" selected>6</option>
+                        <option value="9">9</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="total-page"></div>
+                <div class="total-item"></div>
+            </div>
+        </div>
+    </div>
+    <script src="paging.js"></script>
+</body>
+
+</html>
